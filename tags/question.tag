@@ -29,25 +29,34 @@
 			}
 		]
 
+		this.wrongAnswers = [];
+
 		this.correctAnswers = [];
 		for(let i = 0; i< this.questionData.length; i++) {
 			this.correctAnswers.push(this.questionData[i].options[this.questionData[i].correct-1]);
 		};
+
+		console.log(this.correctAnswers);
 
 		this.check = function() {
 			var values = [];
 			for(i = 0; i < this.questionData.length; i++){
 				var value = document.querySelector("[name = question" + i + "]:checked").value;
 				values.push(value);
-			}
+			};
 
 			let count = 0;
+
 			for(let i = 0; i < values.length; i++) {
 				if(this.correctAnswers[i] === values[i]){
 					count++;
-				}
-			}
-		}
+				} else {
+					this.wrongAnswers.push(i);
+				};
+			};
+		};
+
+
 
 	</script>
 

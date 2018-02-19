@@ -12,7 +12,7 @@
 	      <a class="nav-item nav-link active" href="#">Home</a>
 	      <a class="nav-item nav-link" href="#">Explanation</a>
 	      <a class="nav-item nav-link" href="#">Examples</a>
-	      <a class="nav-item nav-link disabled" href="#">About</a>
+	      <a class="nav-item nav-link" href="#">About</a>
 	    </div>
 	  </div>
 	</nav>
