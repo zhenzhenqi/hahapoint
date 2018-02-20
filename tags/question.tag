@@ -38,6 +38,8 @@
 
 		console.log(this.correctAnswers);
 
+
+
 		this.check = function() {
 			var values = [];
 			for(i = 0; i < this.questionData.length; i++){
@@ -54,6 +56,8 @@
 					this.wrongAnswers.push(i);
 				};
 			};
+
+			console.log(this.wrongAnswers)
 		};
 
 
