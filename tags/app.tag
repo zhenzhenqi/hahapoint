@@ -5,10 +5,10 @@
 
 	<div class="container text-part">
 		<div class="row">
-			<div class="col-sm-12 col-md-8">
+			<div class="col-sm-12 col-md-7">
 				<question></question>
 			</div>
-			<div class="col-sm-12 col-md-4">
+			<div class="col-sm-12 col-md-5">
 				<review if = {loadReview}>
 					<p each = {i in reviews} class="fadeIn">
 						{ i }
