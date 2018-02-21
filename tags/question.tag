@@ -10,7 +10,9 @@
 		</div>
 	</div>
 
-	<button class="btn btn-primary" type="button" name="button" onclick = {check}>Submit</button>
+	<button class="btn btn-primary" type="button" name="button" data-toggle="modal" data-target="#exampleModal" onclick = {check}>Submit</button>
+
+	<modal data = {result}></modal>
 
 	<script>
 		this.questionData = [
@@ -40,7 +42,7 @@
 		this.wrongAnswers = [];
 		this.correctAnswers = [];
 		this.answerExplanation = [];
-
+		this.result = "";
 
 		for(let i = 0; i< this.questionData.length; i++) {
 			this.correctAnswers.push(this.questionData[i].options[this.questionData[i].correct-1]);
@@ -63,6 +65,18 @@
 					this.wrongAnswers.push(i);
 				};
 			};
+
+			this.result = this.wrongAnswers.length + "/" + this.correctAnswers.length
+			// alert(this.wrongAnswers.length + "/" + this.correctAnswers.length)
+//如果这个结果
+
+		// if(this.wrongAnswers.length = 0) {
+		// 	return
+		// }else if() {
+		//
+		// }
+
+
 
 			this.parent.loadReview = true;
 			this.parent.reviews = this.answerExplanation;
