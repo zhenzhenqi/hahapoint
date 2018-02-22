@@ -23,7 +23,10 @@
 	<script>
 		this.loadReview = false;
 		this.reviews = '';
-		console.log(this)
+
+		this.on("update", function(){
+			
+		})
 	</script>
 
 	<style>

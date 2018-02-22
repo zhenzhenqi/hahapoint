@@ -66,7 +66,9 @@
 				};
 			};
 
-			this.result = this.wrongAnswers.length + "/" + this.correctAnswers.length
+			console.log(this.wrongAnswers)
+
+			this.result = count + "/" + this.correctAnswers.length
 			// alert(this.wrongAnswers.length + "/" + this.correctAnswers.length)
 //如果这个结果
 
@@ -80,10 +82,12 @@
 
 			this.parent.loadReview = true;
 			this.parent.reviews = this.answerExplanation;
-			console.log(this.answerExplanation)
 			this.parent.update();
 		};
 
+		this.parent.on("update", function(){
+
+		})
 
 	</script>
 
