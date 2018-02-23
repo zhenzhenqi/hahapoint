@@ -23,7 +23,6 @@
 
 
   <script>
-    console.log(this)
   </script>
 
   <style>

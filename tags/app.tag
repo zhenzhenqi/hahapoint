@@ -10,7 +10,8 @@
 			</div>
 			<div class="col-sm-12 col-md-5">
 				<review if = {loadReview}>
-					<p each = {i in reviews} class="fadeIn">
+					<h2 class="fadeIn">This is the explanation</h2>
+					<p each = {i in reviews} class="fadeIn reviews">
 						{ i }
 					</p>
 				</review>
@@ -25,7 +26,7 @@
 		this.reviews = '';
 
 		this.on("update", function(){
-			
+			console.log(this.tags)
 		})
 	</script>
 

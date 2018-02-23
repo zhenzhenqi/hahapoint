@@ -4,11 +4,7 @@
 
 
   <script>
-    this.on('updated', function() {
 
-      console.log("the review tag was mounted")
-      // console.log(this.parent.tags.question.questionData.length);
-    })
 
 
     // for (var i = 0; i < this.parent.tags.question.questionData.length; i++) {

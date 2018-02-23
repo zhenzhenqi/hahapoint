@@ -10,7 +10,7 @@
 		</div>
 	</div>
 
-	<button class="btn btn-primary" type="button" name="button" data-toggle="modal" data-target="#exampleModal" onclick = {check}>Submit</button>
+	<button class="btn btn-primary submitBtn" type="button" name="button" data-toggle="modal" data-target="#exampleModal" onclick = {check}>Submit</button>
 
 	<modal data = {result}></modal>
 
@@ -22,20 +22,20 @@
 				 "Yes they are, they are amish hipsters.",
 				  "No, they are not hipsters."],
 				correct: 3,
-				explanation: "Hipsters are a subculture of men and women typically in their 20's and 30's that value independent thinking, counter-culture, progressive politics, an appreciation of art and indie-rock, creativity, intelligence, and witty banter. Max noticed what they wear was pretty different from others when  they come into the restaurant, and based on their age, she thought they are following a hipster trend."
+				explanation: "1.Hipsters are a subculture of men and women typically in their 20's and 30's that value independent thinking, counter-culture, progressive politics, an appreciation of art and indie-rock, creativity, intelligence, and witty banter. Max noticed what they wear was pretty different from others when  they come into the restaurant, and based on their age, she thought they are following a hipster trend."
 			},
 			{
 				question: "2.Why Max call believe the two boys a new hipster trend?",
 				options: ["They are hipsters", "They are following a new hipster strain",
 				 "Max CANNOT believe they are real Amish"],
 				correct: 3,
-				explanation: "The Amish  are a group of traditionalist Christian church fellowships with Swiss Anabaptist origins. The Amish are known for simple living, plain dress, and reluctance to adopt many conveniences of modern technology. They are best known for their 19th century way of life, and they believe that some technologies will damage the community, so they avoid some “modern conveniences” such as cars, electricity and telephones. One more thing, Amish prefer to living in their own small communities and differ from other Americans in their dress, language, work, travel and education. That is why Max cannot believe they are real Amish."
+				explanation: "2.The Amish  are a group of traditionalist Christian church fellowships with Swiss Anabaptist origins. The Amish are known for simple living, plain dress, and reluctance to adopt many conveniences of modern technology. They are best known for their 19th century way of life, and they believe that some technologies will damage the community, so they avoid some “modern conveniences” such as cars, electricity and telephones. One more thing, Amish prefer to living in their own small communities and differ from other Americans in their dress, language, work, travel and education. That is why Max cannot believe they are real Amish."
 			},
 			{
 				question: "Why max said “Haveth a set-eth in the booth-eth”?",
 				options: ["She is speaking German-English accent because Amish community usually speak German", "Max is speaking old English because she thinks Amish people speaks old English", "Max always speaks like that"],
 				correct: 2,
-				explanation: "Explanation: Most Old Order Amish speak Pennsylvania Dutch, and refer to non-Amish people as 'English', regardless of ethnicity. Some Amish who migrated to the United States in the 1850s speak a form of Bernese German or a Low Alemannic Alsatian dialect. But here, Max is just speaking like old English because she thinks Amish not only live a traditional way, they also speaks in a traditional way."
+				explanation: "3.Explanation: Most Old Order Amish speak Pennsylvania Dutch, and refer to non-Amish people as 'English', regardless of ethnicity. Some Amish who migrated to the United States in the 1850s speak a form of Bernese German or a Low Alemannic Alsatian dialect. But here, Max is just speaking like old English because she thinks Amish not only live a traditional way, they also speaks in a traditional way."
 			}
 		]
 
@@ -85,9 +85,6 @@
 			this.parent.update();
 		};
 
-		this.parent.on("update", function(){
-
-		})
 
 	</script>
 
