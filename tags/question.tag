@@ -35,11 +35,7 @@
 				question: "Why max said “Haveth a set-eth in the booth-eth”?",
 				options: ["She is speaking German-English accent because Amish community usually speak German", "Max is speaking old English because she thinks Amish people speaks old English", "Max always speaks like that"],
 				correct: 2,
-<<<<<<< HEAD
 				explanation: "3.Most Old Order Amish speak Pennsylvania Dutch, and refer to non-Amish people as 'English', regardless of ethnicity. Some Amish who migrated to the United States in the 1850s speak a form of Bernese German or a Low Alemannic Alsatian dialect. But here, Max is just speaking like old English because she thinks Amish not only live a traditional way, they also speaks in a traditional way."
-=======
-				explanation: "Explanation: Most Old Order Amish speak Pennsylvania Dutch, and refer to non-Amish people as 'English', regardless of ethnicity. Some Amish who migrated to the United States in the 1850s speak a form of Bernese German or a Low Alemannic Alsatian dialect. But here, Max is just speaking like old English because she thinks Amish not only live a traditional way, they also speaks in a traditional way."
->>>>>>> 85824608833752a603d0a091d417b29ffea89bb6
 			}
 		]
 
