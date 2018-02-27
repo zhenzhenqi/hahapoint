@@ -11,9 +11,9 @@
       </div>
       <div class="col-md-6 col-sm-12">
         <h4 class="personalInfo">{item.name}</h4>
-        <h6 class="">{item.role}</h6>
-        <h6 class="">{item.interest}</h6>
-        <h6 class="">{item.email}</h6>
+        <h6>{item.role}</h6>
+        <h6>{item.interest}</h6>
+        <h6>{item.email}</h6>
       </div>
     </div>
   </div>
