@@ -10,10 +10,10 @@
         <img class="img" src={item.img} alt="Card image cap">
       </div>
       <div class="col-md-6 col-sm-12">
-        <h5 class="">{item.name}</h5>
-        <p class="">{item.role}</p>
-        <p class="">{item.interest}</p>
-        <p class="">{item.email}</p>
+        <h4 class="">{item.name}</hh4>
+        <h6 class="">{item.role}</h6>
+        <h6 class="">{item.interest}</h6>
+        <h6 class="">{item.email}</h6>
       </div>
     </div>
   </div>
@@ -23,32 +23,32 @@
 <script>
 this.personalInfo = [
   {
-    name: "Ming Luo",
-    img: "https://crimild.files.wordpress.com/2015/01/img_0548.jpg",
-    role: "What is your role in this project?",
-    interest: "...",
-    email: "...",
+    name: "Team Member: Ming Luo",
+    img: "https://s314.siliconimg.com/kb/content_images/2016/01/22/996319/1453460784_536.jpg",
+    role: "Role in this project: Edited on app.tag, question.tag, navBar.tag and about.html. Help group members debug together.",
+    interest: "Interest: Reading, painting, and having food with people I like",
+    email: "Email: ml3748@tc.columbia.edu",
   },
   {
-    name: "Shuai Yuan",
-    img: "https://doc.tiki.org/img/wiki_up//ImgGal-USER-10.png",
-    role: "What is your role in this project?",
-    interest: "xxx",
-    email: "xxx",
+    name: "Team Member: Shuai Yuan",
+    img: "",
+    role: "Role in this project: Edited on index.html, app.tag, modal.tag and question.tag. Provided technical support and scaffolding to group members.",
+    interest: "Interest: Web Dev, Videography",
+    email: "Email: sy2729@tc.columbia.edu",
   },
   {
-    name: "Yigu Liang",
+    name: "Team Member: Yigu Liang",
     img: "http://via.placeholder.com/350",
-    role: "What is your role in this project?",
-    interest: "aaa",
-    email: "aaa",
+    role: "Role in this project: Edited on question.tag and videoContainer.tag, chose appropriate instructional video and designed questions and answers.",
+    interest: "Interest: Data, data, and data. Horse riding and reading.",
+    email: "Email: yl3605@tc.columbia.edu",
   },
   {
-    name: "Zhiping Zhang",
+    name: "Team Member: Zhiping Zhang",
     img: "http://via.placeholder.com/300",
-    role: "What is your role in this project?",
-    interest: "bbb",
-    email: "bbb",
+    role: "Role in this project: Edited about.tag and about.html , interviewed potential users, and jotted down design journal.",
+    interest: "Interest: modern dance, flower arrangement, watercolor painting...",
+    email: "Email: zhipingsherryzhang@gmail.com",
   }
 ]
 </script>
