@@ -10,7 +10,7 @@
         <img class="img" src={item.img} alt="Card image cap">
       </div>
       <div class="col-md-6 col-sm-12">
-        <h4 class="">{item.name}</hh4>
+        <h4 class="personalInfo">{item.name}</h4>
         <h6 class="">{item.role}</h6>
         <h6 class="">{item.interest}</h6>
         <h6 class="">{item.email}</h6>
@@ -31,21 +31,21 @@ this.personalInfo = [
   },
   {
     name: "Team Member: Shuai Yuan",
-    img: "",
+    img: "./image/Shuai.png",
     role: "Role in this project: Edited on index.html, app.tag, modal.tag and question.tag. Provided technical support and scaffolding to group members.",
-    interest: "Interest: Web Dev, Videography",
+    interest: "Interest: Web development, videography",
     email: "Email: sy2729@tc.columbia.edu",
   },
   {
     name: "Team Member: Yigu Liang",
-    img: "http://via.placeholder.com/350",
+    img: "./image/Yigu.png",
     role: "Role in this project: Edited on question.tag and videoContainer.tag, chose appropriate instructional video and designed questions and answers.",
     interest: "Interest: Data, data, and data. Horse riding and reading.",
     email: "Email: yl3605@tc.columbia.edu",
   },
   {
     name: "Team Member: Zhiping Zhang",
-    img: "http://via.placeholder.com/300",
+    img: "./image/Sherry.png",
     role: "Role in this project: Edited about.tag and about.html , interviewed potential users, and jotted down design journal.",
     interest: "Interest: modern dance, flower arrangement, watercolor painting...",
     email: "Email: zhipingsherryzhang@gmail.com",
@@ -86,7 +86,6 @@ this.personalInfo = [
     transform: translateY(0px);
   }
 }
-
 
 </style>
 
