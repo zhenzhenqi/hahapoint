@@ -104,12 +104,15 @@
 
 		this.on('updated', function(){
 			var reviews = document.querySelectorAll('.reviews');
+			var questions = document.querySelectorAll('.question')
 			for(let i = 0; i < this.reviews.length; i++) {
 				reviews[i].classList.add('right')
+				questions[i].classList.add('right')
 			}
 
 			for(let i = 0; i < this.wrongAnswers.length; i++) {
 				reviews[this.wrongAnswers[i]].classList.add('wrong')
+				questions[this.wrongAnswers[i]].classList.add('wrong')
 			}
 		})
 
