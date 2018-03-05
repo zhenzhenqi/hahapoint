@@ -7,7 +7,7 @@
 				<div each = {item, index in questionData}>
 					<div class="question">
 						<h5>{ item.question }</h5>
-						<div class="form-check form-check-inline" each= { i in item.options }>
+						<div class="form-check" each= { i in item.options }>
 						  <input class="form-check-input" type="radio" name={"question" + index} id={index + i} value={i} ref = {"question" + index}>
 						  <label class="form-check-label" for={index + i}>{ i }</label>
 						</div>
