@@ -1,4 +1,4 @@
-<question>
+<quiz>
 
 
 	<div class="container text-part">
@@ -133,4 +133,4 @@
 
 	</style>
 
-</question>
+</quiz>

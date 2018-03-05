@@ -10,7 +10,7 @@
 	</div>
 	<videoContainer></videoContainer>
 
-	<question></question>
+	<quiz></quiz>
 
 
 
@@ -22,7 +22,7 @@
 	</script>
 
 	<style>
-	
+
   .tutorial {
    margin-top: 50px;
    margin-bottom: 50px;
