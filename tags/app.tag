@@ -1,11 +1,12 @@
 <app>
 
 	<navBar></navBar>
-	<div class="tutorial" >
-		<h4>Welcome to HAHA Point! This web will help you understand the related cultural norms and stories behind specific jokes in TV series.</h4>
-<h5>Step 1: watch an excerpt from “Broken Girls”.</h5>
-<h5>Step 2: Answer related questions.</h5>
-<h5>Step 3: Check out what you have missed and get a laugh.</h5>
+	<div class="container tutorial" >
+		<h5>Welcome to HAHA Point! </h5>
+		<h5>This web will help you understand the related cultural norms and stories behind specific jokes in TV series.</h5>
+		<h6>Step 1: watch an excerpt from “Broken Girls”.</h6>
+		<h6>Step 2: Answer related questions.</h6>
+		<h6>Step 3: Check out what you have missed and get a laugh.</h6>
 	</div>
 	<videoContainer></videoContainer>
 
@@ -21,6 +22,10 @@
 	</script>
 
 	<style>
+		.tutorial {
+			margin-top: 50px;
+		}
+
 
 		:scope .col-md-4 {
 			border-left: 1px solid #ddd;
@@ -44,11 +49,7 @@
 			}
 		}
 
-		.tutorial {
-			margin-left: auto;
-			margin-right: auto;
-		  display: block;
-		}
+
 	</style>
 
 
