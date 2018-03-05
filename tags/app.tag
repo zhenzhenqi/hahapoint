@@ -22,9 +22,13 @@
 	</script>
 
 	<style>
-		.tutorial {
-			margin-top: 50px;
-		}
+	
+  .tutorial {
+   margin-top: 50px;
+   margin-bottom: 50px;
+   word-wrap: break-word;
+   width: 40em;
+  }
 
 
 		:scope .col-md-4 {
