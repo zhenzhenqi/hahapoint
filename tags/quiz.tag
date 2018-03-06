@@ -11,11 +11,11 @@
 						  <input class="form-check-input" type="radio" name={"question" + index} id={index + i} value={i} ref = {"question" + index}>
 						  <label class="form-check-label" for={index + i}>{ i }</label>
 						</div>
+						<button onclick={ showVideo } value={ item.buttonName }>Watch Back</button>
+						<div each={ item in startPlay }>
+							<iframe width="300" height="200" src={ item.link } frameborder="0" if={ item.value }></iframe>
+						</div>
 					</div>
-					<div>
-					<button class="btn btn-primary" type="button" name="button" onclick={ showVideo }>Look detail</button>
-					<iframe width="100" height="100" src={item.startvideo} frameborder="0" if={ startVideo }></iframe>
-				</div>
 				</div>
 			</div>
 			<div class="col-sm-12 col-md-5" show={loadReview}>
@@ -36,9 +36,24 @@
 
 	var that = this;
 
+	//that.startVideo = false;
 		this.loadReview = false;
 		this.reviews = '';
-		this.startVideo = false;
+
+		this.startPlay = [
+			{
+				value: false,
+				link: "https://www.youtube.com/embed/B-hQXZiXtNY?start=6"
+			},
+			{
+				value: false,
+				link: "https://www.youtube.com/embed/B-hQXZiXtNY?start=10"
+			},
+			{
+				value: false,
+				link: "https://www.youtube.com/embed/B-hQXZiXtNY?start=20"
+			}
+		];
 
 		this.questionData = [
 			{
@@ -48,7 +63,7 @@
 				  "No, they are not hipsters."],
 				correct: 3,
 				explanation: "1.Hipsters are a subculture of men and women typically in their 20's and 30's that value independent thinking, counter-culture, progressive politics, an appreciation of art and indie-rock, creativity, intelligence, and witty banter. Max noticed what they wear was pretty different from others when  they come into the restaurant, and based on their age, she thought they are following a hipster trend.",
-				startvideo: "https://www.youtube.com/embed/AY6X5jZZ_JE?start=273"
+				buttonName: "first"
 			},
 			{
 				question: "2.Why Max believes the two boys a new hipster trend?",
@@ -57,7 +72,7 @@
 				 "Max CANNOT believe they are real Amish."],
 				correct: 3,
 				explanation: "2.The Amish  are a group of traditionalist Christian church fellowships with Swiss Anabaptist origins. The Amish are known for simple living, plain dress, and reluctance to adopt many conveniences of modern technology. They are best known for their 19th century way of life, and they believe that some technologies will damage the community, so they avoid some “modern conveniences” such as cars, electricity and telephones. One more thing, Amish prefer to living in their own small communities and differ from other Americans in their dress, language, work, travel and education. That is why Max cannot believe they are real Amish.",
-				startvideo: "https://www.youtube.com/embed/AY6X5jZZ_JE?start=240"
+				buttonName: "second"
 			},
 			{
 				question: "3. Why Max said “Haveth a set-eth in the booth-eth”?",
@@ -66,9 +81,9 @@
 				"Max always speaks like that."],
 				correct: 2,
 				explanation: "3.Most Old Order Amish speak Pennsylvania Dutch, and refer to non-Amish people as 'English', regardless of ethnicity. Some Amish who migrated to the United States in the 1850s speak a form of Bernese German or a Low Alemannic Alsatian dialect. But here, Max is just speaking like old English because she thinks Amish not only live a traditional way, they also speaks in a traditional way.",
-				startvideo: "https://www.youtube.com/embed/AY6X5jZZ_JE?start=266"
+				buttonName: "third"
 			}
-		]
+		];
 
 
 
@@ -117,9 +132,26 @@
 		};
 
 		this.showVideo = function(event) {
-			that.startVideo = true;
-			that.update();
+			var x = event.target.value;
+			//console.log(x)
+			//console.log(that.startPlay[2].value)
+			if(x = 'first'){
+			that.startPlay[0].value = true
+			this.update()= false//to prevent three buttons from updating at the same time
+		}else if(x = 'second'){
+			that.startPlay[1].value = true
+			this.update()= false
+		}else if(x = 'third'){
+		 that.startPlay[2].value = true
+		 this.update()= false;
+			}
 		};
+
+		// this.showVideo = function(event) {
+		// 	that.startVideo = true;
+		// 	that.update();
+		// };
+
 
 
 		this.on('updated', function(){
